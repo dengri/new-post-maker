@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="[%level] - %logger{36}%n%msg%n"/>
+    </Console>
+    <Console name="TraceConsole" target="SYSTEM_OUT">
+    	<PatternLayout pattern="[%level / %logger] %msg%n"/>
+    </Console>
+  </Appenders>
+
+  <Loggers>
+
+  	<Logger name="postmaker.FileManager" level="TRACE" additivity="false">
+  		<AppenderRef ref="TraceConsole"/>
+  	</Logger>
+
+  	<Logger name="postmaker.PostmakerController" level="TRACE" additivity="false">
+  		<AppenderRef ref="TraceConsole"/>
+  	</Logger>
+
+  	<Logger name="postmaker.Mediainfo" level="OFF" additivity="false">
+  		<AppenderRef ref="TraceConsole"/>
+  	</Logger>
+
+  	<Logger name="postmaker.PostMaker" level="TRACE" additivity="false">
+  		<AppenderRef ref="TraceConsole"/>
+  	</Logger>
+
+    <Root level="ERROR">
+      <AppenderRef ref="TraceConsole"/>
+    </Root>
+
+  </Loggers>
+
+</Configuration>
