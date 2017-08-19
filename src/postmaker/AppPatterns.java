@@ -2,7 +2,9 @@ package postmaker;
 
 public enum AppPatterns {
 	SPLIT_IMAGES ("(?=\\[url=)"),
-	SPLIT_MEDIAINFO ("(?<=px)");
+	SPLIT_MEDIAINFO ("(?<=px)"),
+	SPLIT_TITLES("@@@"),
+	SPLIT_URLS("\n");
 
 	private String pattern;
 

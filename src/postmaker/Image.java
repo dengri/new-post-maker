@@ -8,10 +8,8 @@ public class Image extends PostItem {
 
 	@Override
 	public int setNumber(String value) {
-		String numberPartSplitPattern = "-";
-		String zerosReplacePattern = "^0+";
-		String numberPart = value.split(numberPartSplitPattern)[2]
-				.replaceAll(zerosReplacePattern, "");
+		String numberPart = value.split("-")[2]
+				.replaceAll("^0+", "");
 		return Integer.valueOf(numberPart);
 	}
 }
