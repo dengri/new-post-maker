@@ -12,4 +12,9 @@ public class Image extends PostItem {
 				.replaceAll("^0+", "");
 		return Integer.valueOf(numberPart);
 	}
+	
+	public Image append(Image other) {
+		this.value += other.value;
+		return this;
+	}
 }

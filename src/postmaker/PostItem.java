@@ -14,6 +14,7 @@ public class PostItem implements Comparable{
 	}
 	
 	public int setNumber(String value) {
+		System.out.println(value);
 		return Integer.parseInt(value);
 	}
 

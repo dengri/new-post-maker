@@ -7,7 +7,28 @@ public class PostData {
 	private String mediainfo;
 	private String titles;
 	private String urls;
-	private String rawOutput;
+	private String tags;
+	private String pichost;
+	private String filehost;
+	private String coverPichost;
+	private String screenshotPichost;
+	private String delete;
+
+	public String getScreenshotPichost() {
+		return screenshotPichost;
+	}
+
+	public void setScreenshotPichost(String screenshotPichost) {
+		this.screenshotPichost = screenshotPichost;
+	}
+
+	public String getCoverPichost() {
+		return coverPichost;
+	}
+
+	public void setCoverPichost(String coverPichost) {
+		this.coverPichost = coverPichost;
+	}
 
 	public PostData() {
 	}
@@ -76,5 +97,35 @@ public class PostData {
 		this.urls = urls;
 	}
 
+	public void setTags(String tags) {
+		this.tags = tags;
+	}
 	
+	public String getTags() {
+		return this.tags;
+	}
+
+	public void setPichost(String pichost) {
+		this.pichost = pichost;
+	}
+	
+	public String getPichost() {
+		return this.coverPichost;
+	}
+
+	public void setFilehost(String filehost) {
+		this.filehost = filehost;
+	}
+	
+	public String getFilehost() {
+		return filehost;
+	}
+
+	public void setDelete(String delete) {
+		this.delete = delete;
+	}
+	
+	public String getDelete() {
+		return delete;
+	}
 }

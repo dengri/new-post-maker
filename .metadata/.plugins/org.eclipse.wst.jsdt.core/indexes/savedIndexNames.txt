@@ -1,0 +1,5 @@
+INDEX VERSION 1.3+/home/mint/fo/movrename/PostsMaker/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1019335750.index
+448826156.index
+75138359.index
+792952074.index
